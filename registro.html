@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <title>Registro -La Cocina de Juan </title>
+</head>
+<header>
+    <nav id="navegador">
+        <ul>
+            <li><a href="LaCocinaDeJuan.html">Home</a></li>
+            <li><a href="">Acerca De</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="registro.html">Regístrese</a></li>
+            <li><a href="">Sucursales</a></li>
+        </ul>
+        <h1 id="titulo"> La cocina de Juan</h1>
+    </nav>
+</header>
+<body>
+    <h2>Formulario de Registro</h2>
+    <form id="formulario" action="https://formspree.io/f/xoqowwzn"
+    method="POST">
+        <label class="parametro">
+            Nombre:
+            <input type="text" name="nombre" placeholder="Ingrese su nombre aquí:" required maxlength="25">
+        </label>
+        <label class="parametro">
+            Apellido:
+            <input type="text" name="apellido" placeholder="Ingrese aquí su apellido" required maxlength="25">
+        </label> <br> 
+            Dirección
+        <label class="parametro">
+            Calle:
+            <input type="text" name="calle" placeholder="Ingrese su calle aquí" required>
+        </label>
+        <label class="parametro">
+            Número:
+            <input type="number" name="numerocalle" placeholder="Ingrese el número" required>
+        </label class="parametro">
+        <label>
+            Ciudad:
+            <input placeholder="Ingrese su ciudad" type="text" name="ciudad" required>
+        </label class="parametro">
+        <label>
+            Código Postal:
+            <input type="text" name="codigopostal" placeholder="Ingrese su código postal" required>
+        </label> <br>
+        <label class="parametro">
+            Teléfono:
+            <input type="number" name="telefono" placeholder="Ingrese su teléfono" required>
+        </label>
+        <label class="parametro">
+            Fecha Nac.: 
+            <input type="date"name="fecha" required>
+        </label>
+        <label class="parametro">
+            Mail:
+            <input type="email" name="Mail">
+        </label class="parametro"><br>
+        <label>
+            Género:
+            Masculino<input type="radio" name="genero" value="Masculino">
+            Femenino<input type="radio" name="genero" value="Femenino">
+        </label><br>
+        <label class="parametro">
+            Conocimientos Previos:
+            HTML<input type="checkbox" name="html">
+            CSS<input type="checkbox" name="css">
+            JavaScript<input type="checkbox" name="javascript">
+        </label><br>
+        <label class="parametro">
+            Estudios:
+            <select name="estudios">
+                <option value="primaria">Primaria</option>
+                <option value="secundaria">Secundaria</option>
+                <option value="terciario_uni">Terciario o Universidad</option>
+            </select>
+        </label><br>
+        <label class="parametro">
+            Comentarios: <br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br>
+        </label>
+        <br><input class="botonesform" type="submit" value="Enviar">
+        <input class="botonesform" type="reset" value="Borrar">
+    </form>
+</body>
+<footer>
+    <p id="textofinal">Derechos reservados @2020.</p>
+</html>
